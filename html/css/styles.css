@@ -1,0 +1,75 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+header {
+    width: 100%;
+    height: 100px; /* Adjust height as needed */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.menu-icon {
+    font-size: 24px;
+    cursor: pointer;
+    left: -47.2%;
+    position: relative;
+}
+
+.menu-items {
+    display: none;
+    position: absolute;
+    top: 100px; /* Adjust top position as needed */
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 10px;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.menu-items a {
+    display: block;
+    padding: 5px 0;
+    text-align: center;
+    color: #333;
+    text-decoration: none;
+}
+
+.menu-items a:hover {
+    color: rgb(173, 226, 166);
+}
+
+/* Styles for the second page */
+.image-container {
+    width: 100%;
+    height:100%; /* Adjust height to accommodate header and footer */
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+
+
+footer {
+    width: 100%;
+    height: 100px; /* Adjust height as needed */
+    background: rgba(241, 250, 157, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    position: relative;
+}
+
+a {
+    text-decoration: none; /* 링크 밑줄 제거 */
+    color: inherit; /* 링크 색상 상속 */
+}

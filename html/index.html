@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>제발</title>
+    <link rel="stylesheet" href="../html/css/styles.css">
+
+    <style>
+        header,
+        footer {
+            width: 100%;
+            height: 100px;
+            /* Adjust height as needed */
+            background: rgba(241, 250, 157, 0.8);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            position: relative;
+        }
+
+        .menu-icon {
+            left: -45%;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+        <div class="menu-items" id="menuItems">
+            <a href="Spring.html">봄</a>
+            <a href="summer.html">여름</a>
+            <a href="Autumn.html">가을</a>
+            <a href="winter.html">겨울</a>
+            <a href="special.html">🎉특별전🎉</a>
+        </div>
+    </header>
+
+    <div class="image-container">
+        <img src="image/main.jpg">
+    </div>
+
+    <div class="carousel">
+        <link rel="stylesheet" href="../html/css/me.css">
+
+        <div class="carousel-header">
+            <h1 class="carousel-logo">강원도 history </h1>
+        </div>
+        <div class="carousel-inner">
+            <button class="carousel-button left" onclick="prevSlide()">&#10094;</button>
+            <div class="carousel-items" id="carouselItems">
+                <div class="carousel-item">
+                    <a href="../html/chuncheon.html">
+                        <img src="http://tourdb.gwd.go.kr/img/1024/additional/2016/01/11/AM0003_I_01.JPG" alt="첫번째 사진"
+                            class="carousel-image">
+                    </a>
+                    <p class="carousel-title">춘천 대첩</p>
+                </div>
+                <div class="carousel-item">
+                    <a href="../html/Yanggu.html">
+                        <img src="https://www.dmz.go.kr/images/link/board/thumnail/2014/201407221806018996_319x240.jpg"
+                            alt="두번째" class="carousel-image">
+                    </a>
+                    <p class="carousel-title">양구 펀치볼</p>
+                </div>
+                <div class="carousel-item">
+                    <a href="../html/cw.html">
+                        <img src="https://www.cwg.go.kr/DATA/tour/22/thumb/p_20210107033841890_iCUm.jpg" alt=" 세번째"
+                            class="carousel-image">
+                    </a>
+                    <p class="carousel-title">철원 백마고지</p>
+                </div>
+                <div class="carousel-item">
+                    <a href="../html/paloho.html">
+                        <img src="https://tour.ihc.go.kr/upload/sensitivity/sensitivity_1_20220513_1.jpg" alt="네 번째"
+                            class="carousel-image">
+                    </a>
+                    <p class="carousel-title">파로호 대첩</p>
+                </div>
+            </div>
+            <button class="carousel-button right" onclick="nextSlide()">&#10095;</button>
+        </div>
+    </div>
+
+
+    <footer>
+        <div>
+            <h5>주식회사 ccbc | 대표: 이건희 <br>
+                CALL 033 - 256 - 0823 <br>
+                주소: 강원도 춘천시 한림대학길 1</h5>
+        </div>
+    </footer>
+
+
+
+    <script type="text/javascript" src="../html/js/meun.js"></script>
+
+    <script>
+        let currentIndex = 0;
+        const newsItems = document.getElementById('carouselItems');
+        const totalItems = newsItems.children.length;
+
+        function updateCarousel() {
+            newsItems.style.transform = `translateX(-${currentIndex * 25}%)`;
+        }
+
+        function prevSlide() {
+            currentIndex = (currentIndex - 1 + totalItems) % totalItems;
+            updateCarousel();
+        }
+
+        function nextSlide() {
+            currentIndex = (currentIndex + 1) % totalItems;
+            updateCarousel();
+        }
+    </script>
+</body>
+
+</html>

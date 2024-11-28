@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&display=swap');
+
+        .east-sea-dokdo-font {
+            font-family: 'East Sea Dokdo', cursive;
+            font-size: 20px;
+        }
+
+        .title {
+            font-size: 30px;
+        }
+
+        .embed-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            max-width: 100%;
+        }
+
+        .embed-container iframe,
+        .embed-container object,
+        .embed-container embed {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+
+        }
+
+        .small-box {
+            overflow: auto;
+            text-align: center;
+            /* Center align the text */
+            display: flex;
+            /* Use flexbox for centering */
+            justify-content: center;
+            /* Center horizontally */
+            align-items: center;
+
+        }
+
+        .big-box {
+            height: 80vh;
+        }
+    </style>
+
+
+<body>
+    <header>
+
+        <a href="index.html"><img src="image/Army2.png" width="80px" onclick="loadSecondPage()"></a>
+        <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+        <div class="menu-items" id="menuItems">
+            <a href="Spring.html">봄</a>
+            <a href="Summer.html">여름</a>
+            <a href="Autumn.html">가을</a>
+            <a href="Winter.html">겨울</a>
+            <a href="special.html">🎉특별전🎉</a>
+        </div>
+    </header>
+    <script type="text/javascript" src="../html/js/meun.js"></script>
+    </head>
+
+    <link rel="stylesheet" href="../html/css/styles.css">
+    <link rel="stylesheet" href="../html/css/box.css">
+
+
+
+
+    <p class="font">&nbsp;백마고지 전투</p>
+    <hr>
+
+    <div class="container">
+        <div class="big-box east-sea-dokdo-font">
+            <p class="title">전투과정</br>
+            <p>
+                국군 제9사단이 1952년 10월 철원 백마고지에서 중공군의 공격을 수차례 격퇴한 전투.
+                </br>
+
+            <p>
+                <1952년 10월 6일>&nbsp;<br>
+                    중공군이 백마고지에 대한 공격을 시작했다.
+                    중공군은 사단 전 지역에 집중적인 공격준비 사격을 실시하고, 봉래호의 수문을 폭파하여 아군의 후방을 관통하는 역곡천을 범람시킴.
+                    중공군이 고지 주봉과 북쪽 능선으로 각각 1개 대대를 투입하여 공격을 개시하였고,
+                    국군 제9사단은 밤새 3차에 걸쳐 치열한 공방전을 전개하여 중공군을 격퇴하였다.
+            </p></br>
+
+            <p>
+                <1951년 10월 7일 ~ 10일>&nbsp;<br>
+                    5차례에 걸친 밀고 밀리는 치열한 공방전이 지속됨.
+                    국군 제28연대와 제30연대는 많은 병력 손실을 입어 거의 재편성이 불가피한 상황.
+
+            </p></br>
+
+            <p>
+                <1951년 10월 11일>&nbsp;<br>
+                    밤에 고지가 중공군의 수중으로 넘어갔다.
+
+            </p></br>
+
+            <p>
+                <1951년 10월 12일>&nbsp;<br>
+                    아침에 국군 제30연대가 제29연대를 초월하여 반격을 가하고 고지를 재탈환하였으나
+                    중공군의 반격으로 다시 피탈됨.
+            </p></br>
+
+            <p>
+                <1951년 10월 15일>&nbsp;<br>
+                    제28연대가 밀고 밀리는 육탄전을 계속한 끝에 15일에 마침내 고지를 탈환하였다.
+                    이어 제29연대가 395고지 북쪽 낙타능선상의 전초진지를 탈환하여 적을 완전히 격퇴.
+                    하였다.
+            </p></br>
+
+        </div>
+        <div class="small-container">
+            <div class="small-box east-sea-dokdo-font">
+                <p>
+                    <결과 및 영향><br>
+                        국군 제9사단은 10월 6일부터 15일까지 총 12차례의 쟁탈전을 반복하여 7회나 주인이 바뀌는 혈전을 치르고 백마고지를 확보.
+                        중공군 제38군은 총 9개 연대 중 7개 연대를 투입하여 1만여 명이 전사, 부상 또는 포로가 됨.
+                        국군 제9사단은 총 3,500여 명의 사상자를 냄.
+                </p>
+            </div>
+
+            <div class="bottom-box east-sea-dokdo-font">
+                <p class="title">&nbsp;영상으로 보는 백마고지</p>
+                <div class='embed-container'><iframe src='https://www.youtube.com/embed/EVcporxPHIY' frameborder='0'
+                        allowfullscreen></iframe></div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

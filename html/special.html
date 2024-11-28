@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Special time</title>
+    <link rel="stylesheet" href="../html/css/styles.css">
+    <link rel="stylesheet" href="../html/css/special.css">
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+       
+   
+        /* 여기에 새로운 클래스와 애니메이션을 추가합니다. */
+        .special-time {
+            font-family: 'Bangers', cursive;
+            font-size: 10px;
+            color: #FFF;
+            text-shadow: 0 1px 0 #CCC,
+                0 2px 0 #CCC,
+                0 3px 0 #CCC,
+                0 4px 0 #CCC,
+                0 5px 0 #CCC,
+                0 6px 0 transparent,
+                0 7px 0 transparent,
+                0 8px 0 transparent,
+                0 9px 0 transparent,
+                0 10px 10px rgba(0, 0, 0, .4);
+            animation: bounce .5s ease infinite alternate;
+        }
+
+        .menu-items {
+            font-family: 'Noto Sans KR', sans-serif; /* Noto Sans KR 폰트 적용 */
+            font-size: 16px;
+            color: #FFF;
+        }
+
+        /* 나머지 CSS 코드는 그대로 두세요 */
+        header,
+        footer {
+            width: 100%;
+            height: 120px;
+            /* Adjust height as needed */
+            background: rgba(236, 184, 199);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+            background-image:linear-gradient(45deg,white, pink ) ;
+            -webkit-font-smoothing: antialiased;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin: 0;
+            padding-top: 100px;
+            /* Add padding to prevent content from being hidden behind the fixed header */
+        }
+
+        h1 {
+            height: 100px;
+        }
+
+        h1 span {
+            position: relative;
+            top: 20px;
+            display: inline-block;
+            animation: bounce .3s ease infinite alternate;
+            font-family: 'Bangers', cursive;
+            /* 변경된 폰트 적용 */
+            font-size: 80px;
+            color: #FFF;
+            text-shadow: 0 1px 0 #CCC,
+                0 2px 0 #CCC,
+                0 3px 0 #CCC,
+                0 4px 0 #CCC,
+                0 5px 0 #CCC,
+                0 6px 0 transparent,
+                0 7px 0 transparent,
+                0 8px 0 transparent,
+                0 9px 0 transparent,
+                0 10px 10px rgba(0, 0, 0, .4);
+        }
+
+        h1 span:nth-child(2) {
+            animation-delay: .1s;
+        }
+
+        h1 span:nth-child(3) {
+            animation-delay: .2s;
+        }
+
+        h1 span:nth-child(4) {
+            animation-delay: .3s;
+        }
+
+        h1 span:nth-child(5) {
+            animation-delay: .4s;
+        }
+
+        h1 span:nth-child(6) {
+            animation-delay: .5s;
+        }
+
+        h1 span:nth-child(7) {
+            animation-delay: .6s;
+        }
+
+        h1 span:nth-child(8) {
+            animation-delay: .7s;
+        }
+        h1 span:nth-child(9){
+            animation-delay: .8s;
+        }
+        h1 span:nth-child(10) { /* m */
+            animation-delay: .9s; /* Match with e */
+        }
+        h1 span:nth-child(11) { /* e */
+            animation-delay: .10s; /* Match with c */
+        }
+
+
+        @keyframes bounce {
+            100% {
+                top: -20px;
+                text-shadow: 0 1px 0 #CCC,
+                    0 2px 0 #CCC,
+                    0 3px 0 #CCC,
+                    0 4px 0 #CCC,
+                    0 5px 0 #CCC,
+                    0 6px 0 #CCC,
+                    0 7px 0 #CCC,
+                    0 8px 0 #CCC,
+                    0 9px 0 #CCC,
+                    0 50px 25px rgba(0, 0, 0, .2);
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="special-time">
+            <h1>
+                <span>S</span>
+                <span>p</span>
+                <span>e</span>
+                <span>c</span>
+                <span>i</span>
+                <span>a</span>
+                <span>l</span>
+                <span>t</span>
+                <span>i</span>
+                <span>m</span>
+                <span>e</span>
+            </h1>
+        </div>
+        <a href="index.html"></a>
+        <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+        <div class="menu-items" id="menuItems">
+            <a href="Spring.html">봄</a>
+            <a href="summer.html">여름</a>
+            <a href="Autumn.html">가을</a>
+            <a href="winter.html">겨울</a>
+            <a href="">🎉특별전🎉</a>
+        </div>
+        <script type="text/javascript" src="../html/js/meun.js"></script>
+    </header>
+
+  
+    <script>
+        // 'Special time' 요소를 찾습니다.
+        var specialTime = document.querySelector('.special-time');
+
+        // 'Special time' 요소가 클릭되었을 때의 동작을 정의합니다.
+        specialTime.addEventListener('click', function () {
+            // 'index.html'로 이동합니다.
+            window.location.href = 'index.html';
+        });
+    </script>
+    
+    <div class="Container">
+        <!-- other cards -->
+        <div class="Picture">
+          <img class="Picture-img" src="https://d2u3dcdbebyaiu.cloudfront.net/uploads/atch_img/259/dc27ee816aa81cf33936a13b6a53c811_res.jpeg" alt="" />
+          <div class="Picture-note"><span>춘천_손흥민(축구선수)</span></div>
+        </div>
+        <div class="Picture">
+          <img class="Picture-img" src="https://pds.joongang.co.kr/news/component/htmlphoto_mmdata/202312/25/1223db43-0af3-45ff-b974-9fb728bed069.jpg" alt="" />
+          <div class="Picture-note"><span>춘천_황희찬(축구선수)</span></div>
+        </div>
+        <div class="Picture">
+          <img class="Picture-img" src="image/BBa.png" alt="" />
+          <div class="Picture-note"><span>춘천_빠니보틀(여행 유튜버)</span></div>
+        </div>
+        <div class="Picture">
+          <img class="Picture-img" src="https://search.pstatic.net/common?type=b&size=144&expire=1&refresh=true&quality=100&direct=true&src=http%3A%2F%2Fsstatic.naver.net%2Fpeople%2FprofileImg%2F5c984ff9-28da-4ea8-bea5-34925a8b98e6.jpg" alt="" />
+          <div class="Picture-note"><span>춘천_오마이걸 승희(가수)</span></div>
+        </div>
+        <div class="Picture">
+          <img class="Picture-img" src="https://www.shinsegaegroupnewsroom.com/wp-content/uploads/2017/05/1-1.jpg" alt="" />
+          <div class="Picture-note"><span>강릉_신사임당(역사인물)</span></div>
+        </div>
+        <div class="Picture">
+          <img class="Picture-img" src="https://i.namu.wiki/i/FCw4yBcUynYalfHpKePPHHPKJGGREhX4zqbdYfq2fhHxNXjPhqicSqlkzEze6R2hyl-_tGeUuY9FjMj_r9VHRCq7IGXYequzV6dDHX3pe0TWf-ZojPlI-qLzwlejwe6wTTQVSCtVE3GoYrFgj1jgXg.webp" alt="" />
+          <div class="Picture-note"><span>강릉_남도형(성우)</span></div>
+        </div>
+        <div class="Picture">
+          <img class="Picture-img" src="https://i.namu.wiki/i/neioA9YQT97SjQI03Q9_gB3iIAa7Uv5dfSwY8ZZ7Rm3NcyyPglshGfERsOGY-D0GAd1UthmyHXLqfLIrG7eHp3uri2msIjKQi1xVGQCf5y6EDhcXHUAiWct5W3tqeOI1KZEvLf9sJYJs2uwgII2iKg.webp
+          " alt="" />
+          <div class="Picture-note"><span>강릉_김은숙(작가)</span></div>
+        </div>
+        <div class="Picture">
+          <img class="Picture-img" src="https://i.namu.wiki/i/fx_En9l2qJ9F0uypR7Ma1zl5TubCgBZTjpja1VO71W_a7k4SsCQdbVbullaA-ans_4cBbOf8bkLgY7LyT_y57gucx0mVKlCPd7EXAC1gb5ckNjAfOsrZlFt1i8ceB8I0ICo2c7k0rp7LtyGtM32aqQ.webp" alt="" />
+          <div class="Picture-note"><span>동해_말왕(유튜버)</span></div>
+        </div>
+        <div class="Picture">
+          <img class="Picture-img" src="https://i.namu.wiki/i/OV-fe0bmH2hy-Q-kqPyHxHz1K7uX073IuNMC06XY-XlmipjgBTw8RZvnOgTQU7R1UA-7EOyI5gMOaNz3d8KMNbS7FCnIQEOe7vnerRu2_Yd0QZWa5O1bks-5_6qiszQqsSvZDFG0QTyH2W0J7uR0NA.webp" alt="" />
+          <div class="Picture-note"><span>속초_BMK(가수)</span></div>
+        </div>
+    
+        <div class="Picture">
+            <img class="Picture-img" src="https://i.namu.wiki/i/DCQ2KOEYAld-BoAUspGwOGOx_qnQ3PF1Eu57MGFx_Ugeit6CZJxLfSyqwy4JfzAbKcw1kYZ_gHxSncT0QXAMRg.webp" alt="" />
+            <div class="Picture-note"><span>영월_조석(만화가)</span></div>
+          </div>
+    
+          <div class="Picture">
+            <img class="Picture-img" src="https://kr-cdn.spooncast.net/profiles/b/wjKNVbfxrLvKn/e65da54f-5080-431c-a49d-0d839a9a0454.jpg" alt="" />
+            <div class="Picture-note"><span>원주_뽀구미(인터넷방송)</span></div>
+          </div>  
+        
+          <div class="Picture">
+            <img class="Picture-img" src="https://i.namu.wiki/i/dVf1-6siOgM2nK_XLlUU_86ZQyyxjm1fXUTFwgornVxYrNK_eximPl3m6Q0Pq_UIymeGu_dEYtEAX2j9wSC3_MPbqcszhGXt4nkq0ld1uqS5i2CvE-pNhDkzkR_5iRMxG_4acxLm_u1pSDOnyX0t6Q.webp" alt="" />
+            <div class="Picture-note"><span>인제_김국진</span></div>
+          </div>
+          
+          <div class="Picture">
+            <img class="Picture-img" src="https://flexible.img.hani.co.kr/flexible/normal/970/606/imgdb/original/2022/0423/20220423500273.jpg" alt="" />
+            <div class="Picture-note"><span>정선_창모(래퍼)</span></div>
+          </div>
+    
+    
+          <div class="Picture">
+            <img class="Picture-img" src="https://i.namu.wiki/i/ou63-QdYPY2GHZNSKPAOzur5qQj8gIEsODAr-wuf5TwS1RquGaRd-q96oQ_7QA_Od2wsi6c1gf3FesSLjvbhNVOH0VKzNaH84eA2UsjXhQrLrDVfqwWKl6IetoNQCXh8VjvVAzw27LwYiDIFfDJn6w.webp" alt="" />
+            <div class="Picture-note"><span>정선_라미란(배우)</span></div>
+          </div>
+    
+          <div class="Picture">
+            <img class="Picture-img" src="https://i.namu.wiki/i/2P8mpwIWDM2yqOE1fu1lD5NnR0e8O1SA2QH7oHFJrAPe5qYCA-yMjjVM1u2-JI7YBtsJ6EkqREzYvfQndz2bdV4n5nnWv8Vl9YVNQc2eul0kp6bejgr5wbO2ksv9JyMzcjIikxeiUgkU2vHnLutcDA.webp" alt="" />
+            <div class="Picture-note"><span>정선_원빈(배우)</span></div>
+          </div>
+    
+          <div class="Picture">
+            <img class="Picture-img" src="https://i.namu.wiki/i/Wcwq6Cv0IE2gZnpPz_wbj4ZeFQtE7DUEYXD4uiMqZpmKKO58ZQVOAQZIUea6KewoEV3ulsoE9t10IG4MVh0FqN7jhvk9rAmvvWL5aKJK2cIy6KT5pBULsR9m4LIbcy67Bp5GeKILpkK4uJcIRd4xCw.webp" alt="" />
+            <div class="Picture-note"><span>태백_이재인(배우)</span></div>
+          </div>
+    
+          <div class="Picture">
+            <img class="Picture-img" src="https://i.namu.wiki/i/kS7T4ZI_h0pglirBWCXWazhYDZ_dYCwMd6-IxCBzf9oznCwtQTTlOYQfZoBoLxj9tdWhJy6oyAJyHu-G7NMzA1XAJ4NFThVwoV6UmPFTFM4xLqhZn5mqvERNRYU-rhxvyjp8oxK-RPGhY-G46iWkrQ.webp" alt="" />
+            <div class="Picture-note"><span>태백_최유리(가수)</span></div>
+          </div>
+    
+          <div class="Picture">
+            <img class="Picture-img" src="https://img.seoul.co.kr//img/upload/2020/01/03/SSI_20200103143606.png" alt="" />
+            <div class="Picture-note"><span>평창_홍잠언(가수)</span></div>
+          </div>
+    
+        <div class="Picture">
+          <img class="Picture-img" src="https://i.namu.wiki/i/cMYrmppDmIHkbkp9ViPOgjIrFIeGECCrbVYagHo181lr4Hf7WwmrlxnjrHgLb1g7PkdAf-afxj3eGPt1rjy_Rc__MkbYs7LRLFbFUeI0_9U1M84Bu0Xmm46_4sKRWUioDwmZdhDeHe83T3mHbnMBuw.webp" alt="" />
+          <div class="Picture-note"><span>화천_노사연(배우)</span></div>
+        </div>
+    
+        <div class="Picture">
+            <img class="Picture-img" src="https://i.namu.wiki/i/IEMUiUw7FTX-3ux9iFfbl-iQWKclOoS9bTbvdd7a0gUiK0EktNH_egtzQsiypf62pc20Lbhm2oOJGQ7nQaLMKD77UGbABTAKtkShSbuK1JpdaO-u6kLRb8c83VW1fVbfhF5wgNxFwLqOKTH7kcgd0A.webp" alt="" />
+            <div class="Picture-note"><span>횡성_김준경(독립운동가)</span></div>
+          </div>
+      </div>
+
+      <script type="text/javascript" src="../html/js/special.js"></script>
+     
+</body>
+</html>
