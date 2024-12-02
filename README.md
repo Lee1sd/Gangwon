@@ -27,7 +27,7 @@
 
 
 ## 시스템 파일 구성도
-<img src="https://github.com/user-attachments/assets/62ad48a9-2a9e-49ad-875a-f2444baea7af" width="150" height="450"/> <img src="https://github.com/user-attachments/assets/09d1feac-33ad-4df4-bf82-911e191cc333"  width="600" height="450"/>
+<img src="https://github.com/user-attachments/assets/62ad48a9-2a9e-49ad-875a-f2444baea7af" width="150" height="450"/> <img src="!https://github.com/user-attachments/assets/6201c6b2-a0f1-4329-831c-f88b5fbabc4f"  width="600" height="450"/>
 <br>
 
 
