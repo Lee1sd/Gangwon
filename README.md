@@ -19,7 +19,7 @@
 4. 반응형 웹사이트를 구현하여 보기 쉽도록 함
 
 ## 시스템 파일 구성도
-![image](https://github.com/user-attachments/assets/62ad48a9-2a9e-49ad-875a-f2444baea7af) ![image](https://github.com/user-attachments/assets/09d1feac-33ad-4df4-bf82-911e191cc333)
+<img src="https://github.com/user-attachments/assets/62ad48a9-2a9e-49ad-875a-f2444baea7af" width="200" height="400"/> <img src="https://github.com/user-attachments/assets/09d1feac-33ad-4df4-bf82-911e191cc333"  width="200" height="400"/>
 
 
 ## 적용 기술
